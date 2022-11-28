@@ -22,6 +22,20 @@ Please refer to the documentation in the file for more details.
 
 ![Highlighting the search bar location in the webpage](https://github.com/raymondleemv/HTTP5112-ASP.NET-Assignment4/blob/master/HTTP5112-ASP.NET-Assignment4/Readme%20Images/Search%20bar.png)
 
+### User can add teachers
+
+**GET** `http://localhost/Teacher/New`<br/>
+Returns a form for user to add a teacher.<br/>
+This is handled in the [TeacherController.cs](https://github.com/raymondleemv/HTTP5112-ASP.NET-Assignment4/blob/master/HTTP5112-ASP.NET-Assignment4/Controllers/TeacherController.cs).<br/>
+Please refer to the documentation in the file for more details.
+
+### User can delete teachers
+
+**GET** `http://localhost/Teacher/DeleteConfirm/{id}`<br/>
+Returns a page asking whether the user confirms to delete the teacher specified by {id}.<br/>
+This is handled in the [TeacherController.cs](https://github.com/raymondleemv/HTTP5112-ASP.NET-Assignment4/blob/master/HTTP5112-ASP.NET-Assignment4/Controllers/TeacherController.cs).<br/>
+Please refer to the documentation in the file for more details.
+
 ### User can view list of classes
 
 **GET** `http://localhost/Class/List`<br/>
@@ -49,3 +63,13 @@ Please refer to the documentation in the file for more details.
 Returns a specifc student based on {id} which represents the student id.<br/>
 This is handled in the [StudentController.cs](https://github.com/raymondleemv/HTTP5112-ASP.NET-Assignment4/blob/master/HTTP5112-ASP.NET-Assignment4/Controllers/StudentController.cs).<br/>
 Please refer to the documentation in the file for more details.
+
+## Server Rendered Pages
+
+### Add Teacher
+
+![server rendered pages when adding a teacher](https://github.com/raymondleemv/HTTP5112-ASP.NET-Assignment4/blob/master/HTTP5112-ASP.NET-Assignment4/Readme%20Images/ServerRenderedPages_Add.png)
+
+### Delete Teacher
+
+![server rendered pages when deleting a teacher](https://github.com/raymondleemv/HTTP5112-ASP.NET-Assignment4/blob/master/HTTP5112-ASP.NET-Assignment4/Readme%20Images/ServerRenderedPages_DeleteConfirm.png)
